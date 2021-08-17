@@ -24,7 +24,7 @@ async function guess() {
 		status.innerText = 'you won';
 		status.className = 'success';
 	} else {
-		status.innerText = 'you lost';
+		status.innerText = `you lost, it was ${randomElement['name']}`;
 		status.className = 'failure';
 	}
 }
