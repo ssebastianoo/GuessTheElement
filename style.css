@@ -1,0 +1,64 @@
+body {
+		font-family: 'Patrick Hand', cursive;
+		overflow-x: hidden;
+		background: black;
+		color: white;
+}
+
+.container {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-60%);
+	text-align: center;
+}
+
+.element span {
+	font-size: 300%;
+}
+
+input {
+	font-family: 'Patrick Hand', cursive;
+	outline: none;
+	border: none;
+	background: none;
+	color: white;
+	text-align: center;
+	font-size: 200%;
+}
+
+.button {
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+#status {
+	font-size: 200%;
+	padding: 5px 5px;
+	border-radius: 10px;
+}
+
+.success {
+	background: #73ff81;
+}
+
+.failure {
+	background: #f55151;
+}
+
+.restart {
+	font-size: 170%;
+	margin-bottom: 20px;
+	font-family: 'Patrick Hand', cursive;
+	background: #bababa;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 2px 2px white;
+	transition-duration: .4s;
+}
+
+.restart:hover {
+	box-shadow: 4px 4px white;
+}
