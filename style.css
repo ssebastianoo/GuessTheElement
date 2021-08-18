@@ -13,6 +13,20 @@ body {
 	text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: unset;
+  }
+
+	.container {
+		position: unset;
+		width: unset;
+		top: unset;
+		transform: unset;
+		margin-top: 60px;
+	}
+}
+
 .element span {
 	font-size: 300%;
 }
@@ -61,4 +75,17 @@ input {
 
 .restart:hover {
 	box-shadow: 4px 4px white;
+}
+
+.element-info {
+	display: none;
+	background: #454545;
+	box-shadow: 7px 7px #2b2b2b;
+	padding: 10px 10px;
+	border-radius: 12px;
+	margin-bottom: 18px;
+}
+
+.space {
+	display: none;
 }
