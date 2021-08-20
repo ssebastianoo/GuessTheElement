@@ -1,6 +1,16 @@
 let randomElement;
 let elements;
+let input = document.getElementById('input');
 let finishedGuessing = false;
+let elementDiv = document.getElementById('element');
+let elementInfo = document.getElementById('info');
+let points = {
+	total: 0,
+	correct: 0
+};
+let pointsItem = document.getElementById('points');
+let doneElements = [];
+let finishedLoop;
 
 window.onload = async function () {
 	document.getElementById('input').focus();
@@ -8,22 +18,20 @@ window.onload = async function () {
 	let response = await fetch('https://raw.githubusercontent.com/Bowserinator/Periodic-Table-JSON/master/PeriodicTableJSON.json');
 	let json = await response.json();
 	elements = json['elements'];
-	randomElement = await getRandomElement();
-	let elementDiv = document.getElementById('element');
-	elementDiv.innerText = randomElement['symbol'];
+	await restart(true);
 	document.body
-	    .addEventListener('keyup', function(event) {
-	        if (event.code === 'Enter')
+	    .addEventListener('keyup', async function(event) {
+	        if (event.code === 'Enter' | event.keyCode === 13)
 	        {
 	            event.preventDefault();
-							console.log(finishedGuessing);
 							if (finishedGuessing) {
-								document.getElementById('restart').click();
+								await restart();
 							} else {
-								document.getElementById('guessButton').click();
+								await guess();
 							}
 	        }
 	    });
+	await updatePoints();
 }
 
 async function getRandomElement() {
@@ -31,37 +39,35 @@ async function getRandomElement() {
 }
 
 async function guess() {
-	finishedGuessing = true;
-	let input = document.getElementById('input');
 	if (!input.value) {
 		return;
 	};
-	let elementInfo = document.getElementById('elementInfo');
-	let status = document.getElementById('status');
-	let inputs = document.getElementsByTagName('input');
-	let spaces = document.getElementsByClassName('space');
+	finishedGuessing = true;
 	if (input.value.toLowerCase() == randomElement['name'].toLowerCase()) {
-		status.innerText = 'you won';
-		status.className = 'success';
-	} else {
-		status.innerText = `you lost`;
-		status.className = 'failure';
+		points['correct']++;
 	};
-
-	for (i=0; i < inputs.length; i++) {
-		inputs[i].style.display = 'none';
-	};
-	for (i=0; i < spaces.length; i++) {
-		spaces[i].style.display = 'unset';
-	};
-	elementInfo.style.display = 'inline-block';
-	elementInfo.innerHTML = `<h3>${randomElement['name']}</h3>\n<p>Atomic Mass: ${randomElement['atomic_mass']}</p>\n<p>Atomic Number: ${randomElement['number']}</p>\n<p>Category: ${randomElement['category']}</p>`
+	let newElementInfo = document.createElement('div');
+	newElementInfo.innerHTML = `<h3>${randomElement['name']}</h3>\n<p>Symbol: <span class="symbol">${randomElement['symbol']}</span></p>\n<p>Atomic Mass: <span class="atomic-mass">${randomElement['atomic_mass']}</span></p>\n<p>Atomic Number: <span class="atomic-number">${randomElement['number']}</span></p>\n<p>Category: <span class="category">${randomElement['category']}</span></p>`;
+	elementInfo.insertBefore(newElementInfo, elementInfo.firstChild);
+	await updatePoints();
+	await restart();
 }
 
-async function restart() {
-	document.getElementById("elementInfo").style.display = "none";
-	randomElement = await getRandomElement();
-	let elementDiv = document.getElementById('element');
+async function restart(skipPoints=false) {
+	if (doneElements.length == elements.length) {
+		doneElements = [];
+		randomElement = await getRandomElement();
+		elementInfo.innerHTML = '';
+	} else {
+		finishedLoop = false;
+		while (!finishedLoop) {
+			randomElement = await getRandomElement();
+			if (!doneElements.includes(randomElement)) {
+				finishedLoop = true;
+			};
+		};
+		doneElements.push(randomElement);
+	};
 	elementDiv.innerText = randomElement['symbol'];
 	let inputs = document.getElementsByTagName('input');
 	let spaces = document.getElementsByClassName('space');
@@ -71,8 +77,15 @@ async function restart() {
 	for (i=0; i < spaces.length; i++) {
 		spaces[i].style.display = 'none';
 	};
-	let input = document.getElementById('input');
 	input.value = '';
 	input.focus();
 	finishedGuessing = false;
+	if (!skipPoints) {
+		points['total']++;
+		await updatePoints();
+	};
+}
+
+async function updatePoints() {
+	pointsItem.innerText = `${points['correct']} / ${points['total']}`;
 }
