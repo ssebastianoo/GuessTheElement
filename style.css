@@ -29,20 +29,6 @@ input {
 	cursor: pointer;
 }
 
-#status {
-	font-size: 200%;
-	padding: 5px 5px;
-	border-radius: 10px;
-}
-
-.success {
-	background: #73ff81;
-}
-
-.failure {
-	background: #f55151;
-}
-
 .restart {
 	font-size: 170%;
 	margin-bottom: 20px;
@@ -97,13 +83,15 @@ input {
 .atomic-number { background: #96ffb6; }
 .category { background: #9ae7f5; }
 
+.top-game {
+	display: flex;
+	align-items: center;
+}
+
 #hoverStatus {
-	width: 100%;
-	margin-top: 20%;
-	position: absolute;
-	text-align: center;
-	font-size: 600%;
-	z-index: 9999;
+	margin-left: 40px;
+	margin-top: 40px;
+	font-size: 300%;
 }
 
 #hoverStatus span {
@@ -117,14 +105,5 @@ input {
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
-	}
-
-	#hoverStatus {
-		width: 100%;
-		margin-top: 50%;
-		position: absolute;
-		text-align: center;
-		font-size: 600%;
-		z-index: 9999;
 	}
 }
