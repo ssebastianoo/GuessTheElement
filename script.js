@@ -54,7 +54,7 @@ async function guess() {
 	const oldElement = randomElement['name'];
 	const oldValue = input.value;
 	await restart();
-	if (oldValue.toLowerCase() == oldElement.toLowerCase()) {
+	if (oldValue.toLowerCase().replace(/\s/g, '') == oldElement.toLowerCase()) {
 		points['correct']++;
 		await updatePoints();
 		await showStatus('correct');
