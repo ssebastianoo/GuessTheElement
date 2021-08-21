@@ -11,6 +11,7 @@ let points = {
 let pointsItem = document.getElementById('points');
 let doneElements = [];
 let finishedLoop;
+let status = document.getElementById('hoverStatus');
 
 window.onload = async function () {
 	document.getElementById('input').focus();
@@ -34,6 +35,10 @@ window.onload = async function () {
 	await updatePoints();
 }
 
+async function timeout(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 async function getRandomElement() {
 	return elements[Math.floor(Math.random() * elements.length)];
 }
@@ -43,14 +48,20 @@ async function guess() {
 		return;
 	};
 	finishedGuessing = true;
-	if (input.value.toLowerCase() == randomElement['name'].toLowerCase()) {
-		points['correct']++;
-	};
 	let newElementInfo = document.createElement('div');
 	newElementInfo.innerHTML = `<h3>${randomElement['name']}</h3>\n<p>Symbol: <span class="symbol">${randomElement['symbol']}</span></p>\n<p>Atomic Mass: <span class="atomic-mass">${randomElement['atomic_mass']}</span></p>\n<p>Atomic Number: <span class="atomic-number">${randomElement['number']}</span></p>\n<p>Category: <span class="category">${randomElement['category']}</span></p>`;
 	elementInfo.insertBefore(newElementInfo, elementInfo.firstChild);
-	await updatePoints();
+	const oldElement = randomElement['name'];
+	const oldValue = input.value;
 	await restart();
+	if (oldValue.toLowerCase() == oldElement.toLowerCase()) {
+		points['correct']++;
+		await updatePoints();
+		await showStatus('correct');
+	} else {
+		await updatePoints();
+		await showStatus('wrong');
+	};
 }
 
 async function restart(skipPoints=false) {
@@ -71,12 +82,8 @@ async function restart(skipPoints=false) {
 	elementDiv.innerText = randomElement['symbol'];
 	let inputs = document.getElementsByTagName('input');
 	let spaces = document.getElementsByClassName('space');
-	for (i=0; i < inputs.length; i++) {
-		inputs[i].style.display = 'unset';
-	};
-	for (i=0; i < spaces.length; i++) {
-		spaces[i].style.display = 'none';
-	};
+	for (i=0; i < inputs.length; i++) { inputs[i].style.display = 'unset'; };
+	for (i=0; i < spaces.length; i++) { spaces[i].style.display = 'none'; };
 	input.value = '';
 	input.focus();
 	finishedGuessing = false;
@@ -86,6 +93,12 @@ async function restart(skipPoints=false) {
 	};
 }
 
-async function updatePoints() {
-	pointsItem.innerText = `${points['correct']} / ${points['total']}`;
+async function updatePoints() { pointsItem.innerText = `${points['correct']} / ${points['total']}`; }
+
+async function showStatus(type) {
+	status.style.display = 'unset';
+	if (type === 'correct') { status.firstChild.innerText = 'Correct'; status.firstChild.style.background = 'RGBA(109, 232, 142, 0.5)' };
+	if (type === 'wrong') { status.firstChild.innerText = 'Wrong'; status.firstChild.style.background = 'RGBA(235, 94, 94, 0.5)' };
+	await timeout(1000);
+	status.style.display = 'none';
 }

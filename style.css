@@ -97,11 +97,34 @@ input {
 .atomic-number { background: #96ffb6; }
 .category { background: #9ae7f5; }
 
+#hoverStatus {
+	width: 100%;
+	margin-top: 20%;
+	position: absolute;
+	text-align: center;
+	font-size: 600%;
+	z-index: 9999;
+}
+
+#hoverStatus span {
+	padding: 2% 2%;
+	border-radius: 12px;
+}
+
 @media only screen and (max-width: 600px) {
 	.info {
 		height: 100%;
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
+	}
+
+	#hoverStatus {
+		width: 100%;
+		margin-top: 50%;
+		position: absolute;
+		text-align: center;
+		font-size: 600%;
+		z-index: 9999;
 	}
 }
