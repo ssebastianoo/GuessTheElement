@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-	margin-top: 7%;
+	margin-top: 1%;
 	margin-left: 7%;
 }
 
@@ -99,11 +99,58 @@ input {
 	border-radius: 12px;
 }
 
+.header {
+	margin-top: 2%;
+}
+
+.header ul {
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+	margin-left: 7%;
+	font-size: 150%;
+}
+
+.header li {
+	display: inline;
+	margin-right: 50px;
+}
+
+.header a {
+	text-decoration: none;
+	color: white;
+}
+
+.header li {
+	cursor: pointer;
+}
+
+.header li:hover {
+	text-decoration: overline;
+}
+
+.choose-font {
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #454545;
+	padding: 2% 2%;
+	border-radius: 12px;
+}
+
 @media only screen and (max-width: 600px) {
 	.info {
 		height: 100%;
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
+	}
+
+	.header li {
+		display: inline;
+		margin-right: 20px;
 	}
 }

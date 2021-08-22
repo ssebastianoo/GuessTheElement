@@ -14,10 +14,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Besley&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="icon" href="assets/logo.ico" type="image/ico">
   </head>
   <body>
+    <div class="choose-font" id="chooseFont">
+      <h1 onclick="changeFont('roboto')" style="font-family:'Roboto', sans-serif">Roboto</h1>
+      <h1 onclick="changeFont('urbanist')" style="font-family:'Urbanist', sans-serif">Urbanist</h1>
+      <h1 onclick="changeFont('patrick hand')" style="font-family:'Patrick Hand', cursive">Patrick Hand</h1>
+      <h1 onclick="changeFont('klee one')" style="font-family:'Klee One', cursive">Klee One</h1>
+      <h1 onclick="changeFont('besley')" style="font-family:'Besley', serif">Besley</h1>
+    </div>
+    <div class="header">
+      <ul>
+        <li><a href="https://github.com/ssebastianoo/GuessTheElement">GitHub</a></li>
+        <li><a href="https://seba.gq">Developer</a></li>
+        <li onclick="showFonts()">Font</li>
+      </ul>
+    </div>
     <div class="container">
 			<div class="game">
         <div class="top-game">
