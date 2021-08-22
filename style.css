@@ -139,6 +139,7 @@ input {
 	background: #454545;
 	padding: 2% 2%;
 	border-radius: 12px;
+	cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
