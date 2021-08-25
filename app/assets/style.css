@@ -1,0 +1,157 @@
+body {
+		font-family: 'Patrick Hand', cursive;
+		overflow-x: hidden;
+		background: black;
+		color: white;
+}
+
+.container {
+	margin-top: 1%;
+	margin-left: 7%;
+}
+
+.element span {
+	font-size: 300%;
+}
+
+input {
+	font-family: 'Patrick Hand', cursive;
+	outline: none;
+	border: none;
+	background: none;
+	color: white;
+	font-size: 300%;
+	width: 93%;
+}
+
+.button {
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.restart {
+	font-size: 170%;
+	margin-bottom: 20px;
+	font-family: 'Patrick Hand', cursive;
+	background: #bababa;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 2px 2px white;
+	transition-duration: .4s;
+}
+
+.restart:hover {
+	box-shadow: 4px 4px white;
+}
+
+.element-info {
+	display: none;
+	background: #454545;
+	box-shadow: 7px 7px #2b2b2b;
+	padding: 10px 10px;
+	border-radius: 12px;
+	margin-bottom: 18px;
+}
+
+.space {
+	display: none;
+}
+
+.info div {
+	margin-right: 20px;
+	background: #454545;
+	box-shadow: 7px 7px #2b2b2b;
+	padding: 10px 10px;
+	border-radius: 12px;
+	margin-bottom: 18px;
+	float: left;
+}
+
+#points {
+	font-size: 140%;
+}
+
+.symbol, .atomic-mass, .atomic-number, .category {
+	color: black;
+	padding: 0px 2px;
+}
+
+.symbol { background: #e0766e; }
+.atomic-mass { background: #edff91; }
+.atomic-number { background: #96ffb6; }
+.category { background: #9ae7f5; }
+
+.top-game {
+	display: flex;
+	align-items: center;
+}
+
+#hoverStatus {
+	margin-left: 40px;
+	margin-top: 40px;
+	font-size: 300%;
+}
+
+#hoverStatus span {
+	padding: 2% 2%;
+	border-radius: 12px;
+}
+
+.header {
+	margin-top: 2%;
+}
+
+.header ul {
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+	margin-left: 7%;
+	font-size: 150%;
+}
+
+.header li {
+	display: inline;
+	margin-right: 50px;
+}
+
+.header a {
+	text-decoration: none;
+	color: white;
+}
+
+.header li {
+	cursor: pointer;
+}
+
+.header li:hover {
+	text-decoration: overline;
+}
+
+.choose-font {
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #454545;
+	padding: 2% 2%;
+	border-radius: 12px;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+	.info {
+		height: 100%;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.header li {
+		display: inline;
+		margin-right: 20px;
+	}
+}
