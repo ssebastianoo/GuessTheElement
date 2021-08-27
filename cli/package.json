@@ -1,0 +1,35 @@
+{
+  "name": "guesstheelement",
+  "version": "1.0.2",
+  "description": "Guess the element by its symbol",
+  "main": "bin/main.js",
+  "bin": {
+    "gte": "./bin/main.js",
+    "GuessTheElement": "./bin/main.js"
+  },
+  "scripts": {
+    "test": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssebastianoo/GuessTheElement.git"
+  },
+  "keywords": [
+    "periodic table",
+    "guess the element",
+    "guesstheelement",
+    "element",
+    "elements",
+    "science"
+  ],
+  "author": "ssebastianoo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ssebastianoo/GuessTheElement/issues"
+  },
+  "homepage": "https://seba.gq/GuessTheElement",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "readline-sync": "^1.4.10"
+  }
+}
