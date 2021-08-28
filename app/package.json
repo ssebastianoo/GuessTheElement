@@ -4,7 +4,7 @@
     "app-name": "GuessTheElement",
     "package-name": "webview",
     "project-type": "webview",
-    "icon": "./assets/icon/logo.png",
+    "icon": "../assets/logo.png",
     "dist-path": "./dist",
     "permission": [
         "android.permission.INTERNET"
@@ -22,6 +22,8 @@
     },
     "project-name": "GuessTheElement",
     "theme": {
-        "fullScreen": true
+        "fullScreen": true,
+        "colorPrimary": "#000000",
+        "colorPrimaryDark": "#000000"
     }
 }
