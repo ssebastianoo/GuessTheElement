@@ -22,12 +22,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Besley&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="icon" href="assets/logo.ico" type="image/ico">
   </head>
   <body>
     <div class="choose-font" id="chooseFont">
       <h1 onclick="changeFont('roboto')" style="font-family:'Roboto', sans-serif">Roboto</h1>
+      <h1 onclick="changeFont('ubuntu mono')" style="font-family:'Ubuntu Mono', monospace">Ubuntu Mono</h1>
       <h1 onclick="changeFont('urbanist')" style="font-family:'Urbanist', sans-serif">Urbanist</h1>
       <h1 onclick="changeFont('patrick hand')" style="font-family:'Patrick Hand', cursive">Patrick Hand</h1>
       <h1 onclick="changeFont('klee one')" style="font-family:'Klee One', cursive">Klee One</h1>
@@ -42,6 +44,8 @@
     </div>
     <div class="container">
 			<div class="game">
+        <br><br>
+        <a onclick="changeMode()" id="mode"></a>
         <div class="top-game">
           <h1 class="element"><span id="element"></span></h1>
           <h1 id="hoverStatus" style="display:none;"><span></span></h1>

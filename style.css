@@ -1,8 +1,8 @@
 body {
-		font-family: 'Patrick Hand', cursive;
-		overflow-x: hidden;
-		background: black;
-		color: white;
+	font-family: 'Patrick Hand', cursive;
+	overflow-x: hidden;
+	background: black;
+	color: white;
 }
 
 .container {
@@ -12,6 +12,12 @@ body {
 
 .element span {
 	font-size: 300%;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; 
 }
 
 input {
@@ -97,6 +103,27 @@ input {
 #hoverStatus span {
 	padding: 2% 2%;
 	border-radius: 12px;
+	box-shadow: white 4px 4px;
+}
+
+#mode {
+	font-size: 150%;
+	cursor: pointer;
+	color: black;
+	background: white;
+	padding: 2px 2px;
+	border-radius: 4px;
+	transition-duration: .3s;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; 
+}
+
+#mode:hover {
+	padding: 6px 6px;
 }
 
 .header {
@@ -136,10 +163,11 @@ input {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background: #454545;
+	background: RGBA(37, 38, 37, 0.9);
 	padding: 2% 2%;
 	border-radius: 12px;
 	cursor: pointer;
+	box-shadow: white 4px 4px;
 }
 
 @media only screen and (max-width: 600px) {

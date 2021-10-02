@@ -1,5 +1,5 @@
-let randomElement;
-let elements;
+let randomElement, elements, gameMode, finishedLoop;
+let gameModeDiv = document.getElementById("mode");
 let input = document.getElementById('input');
 let finishedGuessing = false;
 let elementDiv = document.getElementById('element');
@@ -10,7 +10,6 @@ let points = {
 };
 let pointsItem = document.getElementById('points');
 let doneElements = [];
-let finishedLoop;
 let status = document.getElementById('hoverStatus');
 let fontDiv = document.getElementById('chooseFont');
 let fonts = {
@@ -18,11 +17,17 @@ let fonts = {
 	'urbanist': "'Urbanist', sans-serif",
 	'patrick hand': "'Patrick Hand', cursive",
 	"klee one": "'Klee One', cursive",
-	"besley": "'Besley', serif"
+	"besley": "'Besley', serif",
+	"ubuntu mono": "'Ubuntu Mono', monospace"
 }
 
 window.onload = async function () {
-	document.getElementById('input').focus();
+	input.focus();
+
+	if (!gameMode) {
+		gameMode = 'symbol';
+		gameModeDiv.innerHTML = `Game Mode: ${gameMode}`
+	};
 
 	let response = await fetch('https://raw.githubusercontent.com/Bowserinator/Periodic-Table-JSON/master/PeriodicTableJSON.json');
 	let json = await response.json();
@@ -30,15 +35,14 @@ window.onload = async function () {
 	await restart(true);
 	document.body
 	    .addEventListener('keyup', async function(event) {
-	        if (event.code === 'Enter' | event.keyCode === 13)
-	        {
-	            event.preventDefault();
-							if (finishedGuessing) {
-								await restart();
-							} else {
-								await guess();
-							}
-	        }
+			if (event.code === 'Enter' | event.keyCode === 13) {
+				event.preventDefault();
+				if (finishedGuessing) {
+					await restart();
+				} else {
+					await guess();
+				};
+	        };
 	    });
 	window.addEventListener('mouseup', function(event){
         if(event.target != fontDiv && event.target.parentNode != fontDiv){
@@ -67,7 +71,7 @@ async function guess() {
 	const oldElement = randomElement['name'];
 	const oldValue = input.value;
 	await restart();
-	if (oldValue.toLowerCase().replace(/\s/g, '') == oldElement.toLowerCase()) {
+	if (oldValue.toLowerCase().replace(/\s/g, '') === oldElement.toLowerCase()) {
 		points['correct']++;
 		await updatePoints();
 		await showStatus('correct');
@@ -79,9 +83,7 @@ async function guess() {
 
 async function restart(skipPoints=false) {
 	if (doneElements.length == elements.length) {
-		doneElements = [];
-		randomElement = await getRandomElement();
-		elementInfo.innerHTML = '';
+		await reset();
 	} else {
 		finishedLoop = false;
 		while (!finishedLoop) {
@@ -92,7 +94,9 @@ async function restart(skipPoints=false) {
 		};
 		doneElements.push(randomElement);
 	};
-	elementDiv.innerText = randomElement['symbol'];
+
+	elementDiv.innerText = randomElement[gameMode.toLowerCase()];
+
 	let inputs = document.getElementsByTagName('input');
 	let spaces = document.getElementsByClassName('space');
 	for (i=0; i < inputs.length; i++) { inputs[i].style.display = 'unset'; };
@@ -123,4 +127,31 @@ async function showFonts() {
 async function changeFont(font) {
 	document.body.style.fontFamily = fonts[font];
 	input.style.fontFamily = fonts[font];
+}
+
+async function changeMode() {
+	switch(gameMode) {
+		case 'symbol':
+			gameMode = 'number';
+			break;
+		case 'number':
+			gameMode = 'symbol';
+			break;
+	};
+	gameModeDiv.innerHTML = `Game Mode: ${gameMode}`;
+	await reset(true);
+	await restart();
+}
+
+async function reset(resetPoints=false) {
+	doneElements = [];
+	randomElement = await getRandomElement();
+	elementInfo.innerHTML = '';
+
+	if (resetPoints) {
+		points = {
+			total: -1,
+			correct: 0
+		};
+	}
 }
