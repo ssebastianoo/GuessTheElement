@@ -32,8 +32,8 @@
             ],
             "cpk-hex": "ffffff",
             "names": [
-                "Hydrogen",
-                "Idrogeno"
+                "hydrogen",
+                "idrogeno"
             ]
         },
         {
@@ -69,8 +69,8 @@
             ],
             "cpk-hex": "d9ffff",
             "names": [
-                "Helium",
-                "Elio"
+                "helium",
+                "elio"
             ]
         },
         {
@@ -108,8 +108,8 @@
             ],
             "cpk-hex": "cc80ff",
             "names": [
-                "Lithium",
-                "Litio"
+                "lithium",
+                "litio"
             ]
         },
         {
@@ -148,8 +148,8 @@
             ],
             "cpk-hex": "c2ff00",
             "names": [
-                "Beryllium",
-                "Berillio"
+                "beryllium",
+                "berillio"
             ]
         },
         {
@@ -189,8 +189,8 @@
             ],
             "cpk-hex": "ffb5b5",
             "names": [
-                "Boron",
-                "Boro"
+                "boron",
+                "boro"
             ]
         },
         {
@@ -231,8 +231,8 @@
             ],
             "cpk-hex": "909090",
             "names": [
-                "Carbon",
-                "Carbonio"
+                "carbon",
+                "carbonio"
             ]
         },
         {
@@ -274,8 +274,8 @@
             ],
             "cpk-hex": "3050f8",
             "names": [
-                "Nitrogen",
-                "Azoto"
+                "nitrogen",
+                "azoto"
             ]
         },
         {
@@ -318,8 +318,8 @@
             ],
             "cpk-hex": "ff0d0d",
             "names": [
-                "Oxygen",
-                "Ossigeno"
+                "oxygen",
+                "ossigeno"
             ]
         },
         {
@@ -363,8 +363,8 @@
             ],
             "cpk-hex": "90e050",
             "names": [
-                "Fluorine",
-                "Fluoro"
+                "fluorine",
+                "fluoro"
             ]
         },
         {
@@ -409,7 +409,7 @@
             ],
             "cpk-hex": "b3e3f5",
             "names": [
-                "Neon"
+                "neon"
             ]
         },
         {
@@ -456,8 +456,8 @@
             ],
             "cpk-hex": "ab5cf2",
             "names": [
-                "Sodium",
-                "Sodio"
+                "sodium",
+                "sodio"
             ]
         },
         {
@@ -505,8 +505,8 @@
             ],
             "cpk-hex": "8aff00",
             "names": [
-                "Magnesium",
-                "Magnesio"
+                "magnesium",
+                "magnesio"
             ]
         },
         {
@@ -555,8 +555,8 @@
             ],
             "cpk-hex": "bfa6a6",
             "names": [
-                "Aluminium",
-                "Alluminio"
+                "aluminium",
+                "alluminio"
             ]
         },
         {
@@ -606,8 +606,8 @@
             ],
             "cpk-hex": "f0c8a0",
             "names": [
-                "Silicon",
-                "Selicio"
+                "silicon",
+                "selicio"
             ]
         },
         {
@@ -658,8 +658,8 @@
             ],
             "cpk-hex": "ff8000",
             "names": [
-                "Phosphorus",
-                "Fosforo"
+                "phosphorus",
+                "fosforo"
             ]
         },
         {
@@ -711,8 +711,8 @@
             ],
             "cpk-hex": "ffff30",
             "names": [
-                "Sulfur",
-                "Zolfo"
+                "sulfur",
+                "zolfo"
             ]
         },
         {
@@ -765,8 +765,8 @@
             ],
             "cpk-hex": "1ff01f",
             "names": [
-                "Chlorine",
-                "Cloro"
+                "chlorine",
+                "cloro"
             ]
         },
         {
@@ -820,7 +820,7 @@
             ],
             "cpk-hex": "80d1e3",
             "names": [
-                "Argon"
+                "argon"
             ]
         },
         {
@@ -876,8 +876,8 @@
             ],
             "cpk-hex": "8f40d4",
             "names": [
-                "Potassium",
-                "Potassio"
+                "potassium",
+                "potassio"
             ]
         },
         {
@@ -934,8 +934,8 @@
             ],
             "cpk-hex": "3dff00",
             "names": [
-                "Calcium",
-                "Calcio"
+                "calcium",
+                "calcio"
             ]
         },
         {
@@ -993,8 +993,8 @@
             ],
             "cpk-hex": "e6e6e6",
             "names": [
-                "Scandium",
-                "Scandio"
+                "scandium",
+                "scandio"
             ]
         },
         {
@@ -1053,8 +1053,8 @@
             ],
             "cpk-hex": "bfc2c7",
             "names": [
-                "Titanium",
-                "Titanio"
+                "titanium",
+                "titanio"
             ]
         },
         {
@@ -1114,8 +1114,8 @@
             ],
             "cpk-hex": "a6a6ab",
             "names": [
-                "Vanadium",
-                "Vanadio"
+                "vanadium",
+                "vanadio"
             ]
         },
         {
@@ -1176,8 +1176,8 @@
             ],
             "cpk-hex": "8a99c7",
             "names": [
-                "Chromium",
-                "Cromo"
+                "chromium",
+                "cromo"
             ]
         },
         {
@@ -1239,7 +1239,7 @@
             ],
             "cpk-hex": "9c7ac7",
             "names": [
-                "Manganese"
+                "manganese"
             ]
         },
         {
@@ -1302,8 +1302,8 @@
             ],
             "cpk-hex": "e06633",
             "names": [
-                "Iron",
-                "Ferro"
+                "iron",
+                "ferro"
             ]
         },
         {
@@ -1367,8 +1367,8 @@
             ],
             "cpk-hex": "f090a0",
             "names": [
-                "Cobalt",
-                "Cobalto"
+                "cobalt",
+                "cobalto"
             ]
         },
         {
@@ -1433,8 +1433,8 @@
             ],
             "cpk-hex": "50d050",
             "names": [
-                "Nickel",
-                "Nichel"
+                "nickel",
+                "nichel"
             ]
         },
         {
@@ -1500,8 +1500,8 @@
             ],
             "cpk-hex": "c88033",
             "names": [
-                "Copper",
-                "Rame"
+                "copper",
+                "rame"
             ]
         },
         {
@@ -1559,8 +1559,8 @@
             ],
             "cpk-hex": "7d80b0",
             "names": [
-                "Zinc",
-                "Zinco"
+                "zinc",
+                "zinco"
             ]
         },
         {
@@ -1601,8 +1601,8 @@
             ],
             "cpk-hex": "c28f8f",
             "names": [
-                "Gallium",
-                "Gallio"
+                "gallium",
+                "gallio"
             ]
         },
         {
@@ -1644,8 +1644,8 @@
             ],
             "cpk-hex": "668f8f",
             "names": [
-                "Germanium",
-                "Germanio"
+                "germanium",
+                "germanio"
             ]
         },
         {
@@ -1688,7 +1688,7 @@
             ],
             "cpk-hex": "bd80e3",
             "names": [
-                "Arsenic"
+                "arsenic"
             ]
         },
         {
@@ -1732,8 +1732,8 @@
             ],
             "cpk-hex": "ffa100",
             "names": [
-                "Selenium",
-                "Selenio"
+                "selenium",
+                "selenio"
             ]
         },
         {
@@ -1778,8 +1778,8 @@
             ],
             "cpk-hex": "a62929",
             "names": [
-                "Bromine",
-                "Bromo"
+                "bromine",
+                "bromo"
             ]
         },
         {
@@ -1846,7 +1846,7 @@
             ],
             "cpk-hex": "5cb8d1",
             "names": [
-                "Krypton"
+                "krypton"
             ]
         },
         {
@@ -1894,8 +1894,8 @@
             ],
             "cpk-hex": "702eb0",
             "names": [
-                "Rubidium",
-                "Rubidio"
+                "rubidium",
+                "rubidio"
             ]
         },
         {
@@ -1944,8 +1944,8 @@
             ],
             "cpk-hex": "00ff00",
             "names": [
-                "Strontium",
-                "Stronzio"
+                "strontium",
+                "stronzio"
             ]
         },
         {
@@ -1995,8 +1995,8 @@
             ],
             "cpk-hex": "94ffff",
             "names": [
-                "Yttrium",
-                "Ittrio"
+                "yttrium",
+                "ittrio"
             ]
         },
         {
@@ -2040,8 +2040,8 @@
             ],
             "cpk-hex": "94e0e0",
             "names": [
-                "Zirconium",
-                "Zirconio"
+                "zirconium",
+                "zirconio"
             ]
         },
         {
@@ -2086,8 +2086,8 @@
             ],
             "cpk-hex": "73c2c9",
             "names": [
-                "Niobium",
-                "Niobio"
+                "niobium",
+                "niobio"
             ]
         },
         {
@@ -2155,8 +2155,8 @@
             ],
             "cpk-hex": "54b5b5",
             "names": [
-                "Molybdenum",
-                "Molibdeno"
+                "molybdenum",
+                "molibdeno"
             ]
         },
         {
@@ -2197,8 +2197,8 @@
             ],
             "cpk-hex": "3b9e9e",
             "names": [
-                "Technetium",
-                "Tecnezio"
+                "technetium",
+                "tecnezio"
             ]
         },
         {
@@ -2239,8 +2239,8 @@
             ],
             "cpk-hex": "248f8f",
             "names": [
-                "Ruthenium",
-                "Rutenio"
+                "ruthenium",
+                "rutenio"
             ]
         },
         {
@@ -2281,8 +2281,8 @@
             ],
             "cpk-hex": "0a7d8c",
             "names": [
-                "Rhodium",
-                "Rodio"
+                "rhodium",
+                "rodio"
             ]
         },
         {
@@ -2322,8 +2322,8 @@
             ],
             "cpk-hex": "006985",
             "names": [
-                "Palladium",
-                "Palladio"
+                "palladium",
+                "palladio"
             ]
         },
         {
@@ -2364,8 +2364,8 @@
             ],
             "cpk-hex": "c0c0c0",
             "names": [
-                "Silver",
-                "Argento"
+                "silver",
+                "argento"
             ]
         },
         {
@@ -2406,8 +2406,8 @@
             ],
             "cpk-hex": "ffd98f",
             "names": [
-                "Cadmium",
-                "Cadmio"
+                "cadmium",
+                "cadmio"
             ]
         },
         {
@@ -2449,8 +2449,8 @@
             ],
             "cpk-hex": "a67573",
             "names": [
-                "Indium",
-                "Indio"
+                "indium",
+                "indio"
             ]
         },
         {
@@ -2493,8 +2493,8 @@
             ],
             "cpk-hex": "668080",
             "names": [
-                "Tin",
-                "Stagno"
+                "tin",
+                "stagno"
             ]
         },
         {
@@ -2538,8 +2538,8 @@
             ],
             "cpk-hex": "9e63b5",
             "names": [
-                "Antimony",
-                "Antimonio"
+                "antimony",
+                "antimonio"
             ]
         },
         {
@@ -2584,7 +2584,7 @@
             ],
             "cpk-hex": "d47a00",
             "names": [
-                "Tellurium"
+                "tellurium"
             ]
         },
         {
@@ -2625,8 +2625,8 @@
             ],
             "cpk-hex": "940094",
             "names": [
-                "Iodine",
-                "Iodio"
+                "iodine",
+                "iodio"
             ]
         },
         {
@@ -2667,8 +2667,8 @@
             ],
             "cpk-hex": "429eb0",
             "names": [
-                "Xenon",
-                "Xeno"
+                "xenon",
+                "xeno"
             ]
         },
         {
@@ -2710,8 +2710,8 @@
             ],
             "cpk-hex": "57178f",
             "names": [
-                "Cesium",
-                "Cesio"
+                "cesium",
+                "cesio"
             ]
         },
         {
@@ -2753,8 +2753,8 @@
             ],
             "cpk-hex": "00c900",
             "names": [
-                "Barium",
-                "Bario"
+                "barium",
+                "bario"
             ]
         },
         {
@@ -2798,8 +2798,8 @@
             ],
             "cpk-hex": "70d4ff",
             "names": [
-                "Lanthanum",
-                "Lantanio"
+                "lanthanum",
+                "lantanio"
             ]
         },
         {
@@ -2844,8 +2844,8 @@
             ],
             "cpk-hex": "ffffc7",
             "names": [
-                "Cerium",
-                "Cerio"
+                "cerium",
+                "cerio"
             ]
         },
         {
@@ -2889,8 +2889,8 @@
             ],
             "cpk-hex": "d9ffc7",
             "names": [
-                "Praseodymium",
-                "Praseodimio"
+                "praseodymium",
+                "praseodimio"
             ]
         },
         {
@@ -2933,8 +2933,8 @@
             ],
             "cpk-hex": "c7ffc7",
             "names": [
-                "Neodymium",
-                "Neodimio"
+                "neodymium",
+                "neodimio"
             ]
         },
         {
@@ -2977,8 +2977,8 @@
             ],
             "cpk-hex": "a3ffc7",
             "names": [
-                "Promethium",
-                "Promezio"
+                "promethium",
+                "promezio"
             ]
         },
         {
@@ -3021,8 +3021,8 @@
             ],
             "cpk-hex": "8fffc7",
             "names": [
-                "Samarium",
-                "Samario"
+                "samarium",
+                "samario"
             ]
         },
         {
@@ -3065,8 +3065,8 @@
             ],
             "cpk-hex": "61ffc7",
             "names": [
-                "Europium",
-                "Europio"
+                "europium",
+                "europio"
             ]
         },
         {
@@ -3109,8 +3109,8 @@
             ],
             "cpk-hex": "45ffc7",
             "names": [
-                "Gadolinium",
-                "Gadolinio"
+                "gadolinium",
+                "gadolinio"
             ]
         },
         {
@@ -3153,8 +3153,8 @@
             ],
             "cpk-hex": "30ffc7",
             "names": [
-                "Terbium",
-                "Terbio"
+                "terbium",
+                "terbio"
             ]
         },
         {
@@ -3197,8 +3197,8 @@
             ],
             "cpk-hex": "1fffc7",
             "names": [
-                "Dysprosium",
-                "Disprosio"
+                "dysprosium",
+                "disprosio"
             ]
         },
         {
@@ -3241,8 +3241,8 @@
             ],
             "cpk-hex": "00ff9c",
             "names": [
-                "Holmium",
-                "Olmio"
+                "holmium",
+                "olmio"
             ]
         },
         {
@@ -3285,8 +3285,8 @@
             ],
             "cpk-hex": "00e675",
             "names": [
-                "Erbium",
-                "Erbio"
+                "erbium",
+                "erbio"
             ]
         },
         {
@@ -3329,8 +3329,8 @@
             ],
             "cpk-hex": "00d452",
             "names": [
-                "Thulium",
-                "Tulio"
+                "thulium",
+                "tulio"
             ]
         },
         {
@@ -3373,8 +3373,8 @@
             ],
             "cpk-hex": "00bf38",
             "names": [
-                "Ytterbium",
-                "Itterbio"
+                "ytterbium",
+                "itterbio"
             ]
         },
         {
@@ -3418,8 +3418,8 @@
             ],
             "cpk-hex": "00ab24",
             "names": [
-                "Lutetium",
-                "Lutezio"
+                "lutetium",
+                "lutezio"
             ]
         },
         {
@@ -3462,8 +3462,8 @@
             ],
             "cpk-hex": "4dc2ff",
             "names": [
-                "Hafnium",
-                "Afnio"
+                "hafnium",
+                "afnio"
             ]
         },
         {
@@ -3504,8 +3504,8 @@
             ],
             "cpk-hex": "4da6ff",
             "names": [
-                "Tantalum",
-                "Tantalio"
+                "tantalum",
+                "tantalio"
             ]
         },
         {
@@ -3546,8 +3546,8 @@
             ],
             "cpk-hex": "2194d6",
             "names": [
-                "Tungsten",
-                "Tungsteno"
+                "tungsten",
+                "tungsteno"
             ]
         },
         {
@@ -3590,8 +3590,8 @@
             ],
             "cpk-hex": "267dab",
             "names": [
-                "Rhenium",
-                "Renio"
+                "rhenium",
+                "renio"
             ]
         },
         {
@@ -3632,8 +3632,8 @@
             ],
             "cpk-hex": "266696",
             "names": [
-                "Osmium",
-                "Osmio"
+                "osmium",
+                "osmio"
             ]
         },
         {
@@ -3674,8 +3674,8 @@
             ],
             "cpk-hex": "175487",
             "names": [
-                "Iridium",
-                "Iridio"
+                "iridium",
+                "iridio"
             ]
         },
         {
@@ -3716,8 +3716,8 @@
             ],
             "cpk-hex": "d0d0e0",
             "names": [
-                "Platinum",
-                "Platino"
+                "platinum",
+                "platino"
             ]
         },
         {
@@ -3758,8 +3758,8 @@
             ],
             "cpk-hex": "ffd123",
             "names": [
-                "Gold",
-                "Oro"
+                "gold",
+                "oro"
             ]
         },
         {
@@ -3801,8 +3801,8 @@
             ],
             "cpk-hex": "b8b8d0",
             "names": [
-                "Mercury",
-                "Mercurio"
+                "mercury",
+                "mercurio"
             ]
         },
         {
@@ -3844,8 +3844,8 @@
             ],
             "cpk-hex": "a6544d",
             "names": [
-                "Thallium",
-                "Tallio"
+                "thallium",
+                "tallio"
             ]
         },
         {
@@ -3889,8 +3889,8 @@
             ],
             "cpk-hex": "575961",
             "names": [
-                "Lead",
-                "Piombo"
+                "lead",
+                "piombo"
             ]
         },
         {
@@ -3935,8 +3935,8 @@
             ],
             "cpk-hex": "9e4fb5",
             "names": [
-                "Bismuth",
-                "Bismuto"
+                "bismuth",
+                "bismuto"
             ]
         },
         {
@@ -3976,8 +3976,8 @@
             ],
             "cpk-hex": "ab5c00",
             "names": [
-                "Polonium",
-                "Polonio"
+                "polonium",
+                "polonio"
             ]
         },
         {
@@ -4017,8 +4017,8 @@
             ],
             "cpk-hex": "754f45",
             "names": [
-                "Astatine",
-                "Astato"
+                "astatine",
+                "astato"
             ]
         },
         {
@@ -4058,7 +4058,7 @@
             ],
             "cpk-hex": "428296",
             "names": [
-                "Radon"
+                "radon"
             ]
         },
         {
@@ -4099,8 +4099,8 @@
             ],
             "cpk-hex": "420066",
             "names": [
-                "Francium",
-                "Francio"
+                "francium",
+                "francio"
             ]
         },
         {
@@ -4142,8 +4142,8 @@
             ],
             "cpk-hex": "007d00",
             "names": [
-                "Radium",
-                "Radio"
+                "radium",
+                "radio"
             ]
         },
         {
@@ -4185,8 +4185,8 @@
             ],
             "cpk-hex": "70abfa",
             "names": [
-                "Actinium",
-                "Attinio"
+                "actinium",
+                "attinio"
             ]
         },
         {
@@ -4230,8 +4230,8 @@
             ],
             "cpk-hex": "00baff",
             "names": [
-                "Thorium",
-                "Torio"
+                "thorium",
+                "torio"
             ]
         },
         {
@@ -4272,8 +4272,8 @@
             ],
             "cpk-hex": "00a1ff",
             "names": [
-                "Protactinium",
-                "Protoattinio"
+                "protactinium",
+                "protoattinio"
             ]
         },
         {
@@ -4315,8 +4315,8 @@
             ],
             "cpk-hex": "008fff",
             "names": [
-                "Uranium",
-                "Uranio"
+                "uranium",
+                "uranio"
             ]
         },
         {
@@ -4357,8 +4357,8 @@
             ],
             "cpk-hex": "0080ff",
             "names": [
-                "Neptunium",
-                "Nettunio"
+                "neptunium",
+                "nettunio"
             ]
         },
         {
@@ -4399,8 +4399,8 @@
             ],
             "cpk-hex": "006bff",
             "names": [
-                "Plutonium",
-                "Plutonio"
+                "plutonium",
+                "plutonio"
             ]
         },
         {
@@ -4441,8 +4441,8 @@
             ],
             "cpk-hex": "545cf2",
             "names": [
-                "Americium",
-                "Americio"
+                "americium",
+                "americio"
             ]
         },
         {
@@ -4483,8 +4483,8 @@
             ],
             "cpk-hex": "785ce3",
             "names": [
-                "Curium",
-                "Curio"
+                "curium",
+                "curio"
             ]
         },
         {
@@ -4525,8 +4525,8 @@
             ],
             "cpk-hex": "8a4fe3",
             "names": [
-                "Berkelium",
-                "Berkelio"
+                "berkelium",
+                "berkelio"
             ]
         },
         {
@@ -4567,8 +4567,8 @@
             ],
             "cpk-hex": "a136d4",
             "names": [
-                "Californium",
-                "Californio"
+                "californium",
+                "californio"
             ]
         },
         {
@@ -4609,8 +4609,8 @@
             ],
             "cpk-hex": "b31fd4",
             "names": [
-                "Einsteinium",
-                "Einsteinio"
+                "einsteinium",
+                "einsteinio"
             ]
         },
         {
@@ -4651,8 +4651,8 @@
             ],
             "cpk-hex": "b31fba",
             "names": [
-                "Fermium",
-                "Fermio"
+                "fermium",
+                "fermio"
             ]
         },
         {
@@ -4693,8 +4693,8 @@
             ],
             "cpk-hex": "b30da6",
             "names": [
-                "Mendelevium",
-                "Mendelevio"
+                "mendelevium",
+                "mendelevio"
             ]
         },
         {
@@ -4735,8 +4735,8 @@
             ],
             "cpk-hex": "bd0d87",
             "names": [
-                "Nobelium",
-                "Nobelio"
+                "nobelium",
+                "nobelio"
             ]
         },
         {
@@ -4777,8 +4777,8 @@
             ],
             "cpk-hex": "c70066",
             "names": [
-                "Lawrencium",
-                "Laurenzio"
+                "lawrencium",
+                "laurenzio"
             ]
         },
         {
@@ -4819,8 +4819,8 @@
             ],
             "cpk-hex": "cc0059",
             "names": [
-                "Rutherfordium",
-                "Rutherfordio"
+                "rutherfordium",
+                "rutherfordio"
             ]
         },
         {
@@ -4859,8 +4859,8 @@
             "ionization_energies": [],
             "cpk-hex": "d1004f",
             "names": [
-                "Dubnium",
-                "Dubnio"
+                "dubnium",
+                "dubnio"
             ]
         },
         {
@@ -4899,8 +4899,8 @@
             "ionization_energies": [],
             "cpk-hex": "d90045",
             "names": [
-                "Seaborgium",
-                "Seaborgio"
+                "seaborgium",
+                "seaborgio"
             ]
         },
         {
@@ -4939,8 +4939,8 @@
             "ionization_energies": [],
             "cpk-hex": "e00038",
             "names": [
-                "Bohrium",
-                "Bohrio"
+                "bohrium",
+                "bohrio"
             ]
         },
         {
@@ -4979,8 +4979,8 @@
             "ionization_energies": [],
             "cpk-hex": "e6002e",
             "names": [
-                "Hassium",
-                "Hassio"
+                "hassium",
+                "hassio"
             ]
         },
         {
@@ -5019,8 +5019,8 @@
             "ionization_energies": [],
             "cpk-hex": "eb0026",
             "names": [
-                "Meitnerium",
-                "Meitnerio"
+                "meitnerium",
+                "meitnerio"
             ]
         },
         {
@@ -5059,8 +5059,8 @@
             "ionization_energies": [],
             "cpk-hex": null,
             "names": [
-                "Darmstadtium",
-                "Darmstadtio"
+                "darmstadtium",
+                "darmstadtio"
             ]
         },
         {
@@ -5099,8 +5099,8 @@
             "ionization_energies": [],
             "cpk-hex": null,
             "names": [
-                "Roentgenium",
-                "Roentgenio"
+                "roentgenium",
+                "roentgenio"
             ]
         },
         {
@@ -5139,8 +5139,8 @@
             "ionization_energies": [],
             "cpk-hex": null,
             "names": [
-                "Copernicium",
-                "Copernicio"
+                "copernicium",
+                "copernicio"
             ]
         },
         {
@@ -5179,8 +5179,8 @@
             "ionization_energies": [],
             "cpk-hex": null,
             "names": [
-                "Nihonium",
-                "Nihonio"
+                "nihonium",
+                "nihonio"
             ]
         },
         {
@@ -5219,8 +5219,8 @@
             "ionization_energies": [],
             "cpk-hex": null,
             "names": [
-                "Flerovium",
-                "Flerovio"
+                "flerovium",
+                "flerovio"
             ]
         },
         {
@@ -5259,8 +5259,8 @@
             "ionization_energies": [],
             "cpk-hex": null,
             "names": [
-                "Moscovium",
-                "Moscovio"
+                "moscovium",
+                "moscovio"
             ]
         },
         {
@@ -5299,8 +5299,8 @@
             "ionization_energies": [],
             "cpk-hex": null,
             "names": [
-                "Livermorium",
-                "Livermorio"
+                "livermorium",
+                "livermorio"
             ]
         },
         {
@@ -5339,8 +5339,8 @@
             "ionization_energies": [],
             "cpk-hex": null,
             "names": [
-                "Tennessine",
-                "Tennesso"
+                "tennessine",
+                "tennesso"
             ]
         },
         {
@@ -5379,8 +5379,8 @@
             "ionization_energies": [],
             "cpk-hex": null,
             "names": [
-                "Oganesson",
-                "Oganesso"
+                "oganesson",
+                "oganesso"
             ]
         },
         {
@@ -5420,8 +5420,8 @@
             "ionization_energies": [],
             "cpk-hex": null,
             "names": [
-                "Ununennium",
-                "Ununennio"
+                "ununennium",
+                "ununennio"
             ]
         }
     ]
