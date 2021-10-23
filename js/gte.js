@@ -18,7 +18,7 @@ window.onload = async function () {
 		gameMode = 'symbol';
 		gameModeDiv.innerHTML = `Game Mode: ${gameMode}`
 	};
-
+	
 	let response = await fetch('https://raw.githubusercontent.com/ssebastianoo/GuessTheElement/master/elements.json');
 	let json = await response.json();
 	elements = json['elements'];
@@ -54,10 +54,13 @@ async function guess() {
 	let newElementInfo = document.createElement('div');
 	newElementInfo.innerHTML = `<h3>${randomElement['name']}</h3>\n<p>Symbol: <span class="symbol">${randomElement['symbol']}</span></p>\n<p>Atomic Mass: <span class="atomic-mass">${randomElement['atomic_mass']}</span></p>\n<p>Atomic Number: <span class="atomic-number">${randomElement['number']}</span></p>\n<p>Category: <span class="category">${randomElement['category']}</span></p>`;
 	elementInfo.insertBefore(newElementInfo, elementInfo.firstChild);
-	const oldElement = randomElement['name'];
+	const names = randomElement['names'];
 	const oldValue = input.value;
+	console.log(names.includes(oldValue.toLowerCase().replace(/\s/g, '')));
+	console.log(names);
+	console.log(oldValue.toLowerCase().replace(/\s/g, ''));
 	await restart();
-	if (oldValue.toLowerCase().replace(/\s/g, '') === oldElement.toLowerCase()) {
+	if (names.includes(oldValue.toLowerCase().replace(/\s/g, ''))) {
 		points['correct']++;
 		await updatePoints();
 		await showStatus('correct');
