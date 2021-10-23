@@ -2,9 +2,13 @@ let elementName = document.getElementById('element-name');
 let elementSymbol = document.getElementById('element-symbol');
 let elementNumber = document.getElementById('element-number');
 let input = document.getElementById('input');
+let elements;
 
 window.onload = async function () {
 	input.focus();
+	let response = await fetch('https://raw.githubusercontent.com/ssebastianoo/GuessTheElement/master/elements.json');
+	let json = await response.json();
+	elements = json['elements'];
 	document.body
 	    .addEventListener('keyup', async function(event) {
 			if (event.code === 'Enter' | event.keyCode === 13) {
