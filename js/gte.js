@@ -19,7 +19,7 @@ window.onload = async function () {
 		gameModeDiv.innerHTML = `Game Mode: ${gameMode}`
 	};
 
-	let response = await fetch('../elements.json');
+	let response = await fetch('https://raw.githubusercontent.com/ssebastianoo/GuessTheElement/master/elements.json');
 	let json = await response.json();
 	elements = json['elements'];
 	await restart(true);
