@@ -4185,7 +4185,8 @@
             ],
             "cpk-hex": "70abfa",
             "names": [
-                "Actinium"
+                "Actinium",
+                "Attinio"
             ]
         },
         {
@@ -4229,7 +4230,8 @@
             ],
             "cpk-hex": "00baff",
             "names": [
-                "Thorium"
+                "Thorium",
+                "Torio"
             ]
         },
         {
@@ -4270,7 +4272,8 @@
             ],
             "cpk-hex": "00a1ff",
             "names": [
-                "Protactinium"
+                "Protactinium",
+                "Protoattinio"
             ]
         },
         {
@@ -4312,7 +4315,8 @@
             ],
             "cpk-hex": "008fff",
             "names": [
-                "Uranium"
+                "Uranium",
+                "Uranio"
             ]
         },
         {
@@ -4353,7 +4357,8 @@
             ],
             "cpk-hex": "0080ff",
             "names": [
-                "Neptunium"
+                "Neptunium",
+                "Nettunio"
             ]
         },
         {
@@ -4394,7 +4399,8 @@
             ],
             "cpk-hex": "006bff",
             "names": [
-                "Plutonium"
+                "Plutonium",
+                "Plutonio"
             ]
         },
         {
@@ -4435,7 +4441,8 @@
             ],
             "cpk-hex": "545cf2",
             "names": [
-                "Americium"
+                "Americium",
+                "Americio"
             ]
         },
         {
@@ -4476,7 +4483,8 @@
             ],
             "cpk-hex": "785ce3",
             "names": [
-                "Curium"
+                "Curium",
+                "Curio"
             ]
         },
         {
@@ -4517,7 +4525,8 @@
             ],
             "cpk-hex": "8a4fe3",
             "names": [
-                "Berkelium"
+                "Berkelium",
+                "Berkelio"
             ]
         },
         {
@@ -4558,7 +4567,8 @@
             ],
             "cpk-hex": "a136d4",
             "names": [
-                "Californium"
+                "Californium",
+                "Californio"
             ]
         },
         {
@@ -4599,7 +4609,8 @@
             ],
             "cpk-hex": "b31fd4",
             "names": [
-                "Einsteinium"
+                "Einsteinium",
+                "Einsteinio"
             ]
         },
         {
@@ -4640,7 +4651,8 @@
             ],
             "cpk-hex": "b31fba",
             "names": [
-                "Fermium"
+                "Fermium",
+                "Fermio"
             ]
         },
         {
@@ -4681,7 +4693,8 @@
             ],
             "cpk-hex": "b30da6",
             "names": [
-                "Mendelevium"
+                "Mendelevium",
+                "Mendelevio"
             ]
         },
         {
@@ -4722,7 +4735,8 @@
             ],
             "cpk-hex": "bd0d87",
             "names": [
-                "Nobelium"
+                "Nobelium",
+                "Nobelio"
             ]
         },
         {
@@ -4763,7 +4777,8 @@
             ],
             "cpk-hex": "c70066",
             "names": [
-                "Lawrencium"
+                "Lawrencium",
+                "Laurenzio"
             ]
         },
         {
@@ -4804,7 +4819,8 @@
             ],
             "cpk-hex": "cc0059",
             "names": [
-                "Rutherfordium"
+                "Rutherfordium",
+                "Rutherfordio"
             ]
         },
         {
@@ -4843,7 +4859,8 @@
             "ionization_energies": [],
             "cpk-hex": "d1004f",
             "names": [
-                "Dubnium"
+                "Dubnium",
+                "Dubnio"
             ]
         },
         {
@@ -4882,7 +4899,8 @@
             "ionization_energies": [],
             "cpk-hex": "d90045",
             "names": [
-                "Seaborgium"
+                "Seaborgium",
+                "Seaborgio"
             ]
         },
         {
@@ -4921,7 +4939,8 @@
             "ionization_energies": [],
             "cpk-hex": "e00038",
             "names": [
-                "Bohrium"
+                "Bohrium",
+                "Bohrio"
             ]
         },
         {
@@ -4960,7 +4979,8 @@
             "ionization_energies": [],
             "cpk-hex": "e6002e",
             "names": [
-                "Hassium"
+                "Hassium",
+                "Hassio"
             ]
         },
         {
@@ -4999,7 +5019,8 @@
             "ionization_energies": [],
             "cpk-hex": "eb0026",
             "names": [
-                "Meitnerium"
+                "Meitnerium",
+                "Meitnerio"
             ]
         },
         {
@@ -5038,7 +5059,8 @@
             "ionization_energies": [],
             "cpk-hex": null,
             "names": [
-                "Darmstadtium"
+                "Darmstadtium",
+                "Darmstadtio"
             ]
         },
         {
@@ -5077,7 +5099,8 @@
             "ionization_energies": [],
             "cpk-hex": null,
             "names": [
-                "Roentgenium"
+                "Roentgenium",
+                "Roentgenio"
             ]
         },
         {
@@ -5116,7 +5139,8 @@
             "ionization_energies": [],
             "cpk-hex": null,
             "names": [
-                "Copernicium"
+                "Copernicium",
+                "Copernicio"
             ]
         },
         {
@@ -5155,7 +5179,8 @@
             "ionization_energies": [],
             "cpk-hex": null,
             "names": [
-                "Nihonium"
+                "Nihonium",
+                "Nihonio"
             ]
         },
         {
@@ -5194,7 +5219,8 @@
             "ionization_energies": [],
             "cpk-hex": null,
             "names": [
-                "Flerovium"
+                "Flerovium",
+                "Flerovio"
             ]
         },
         {
@@ -5233,7 +5259,8 @@
             "ionization_energies": [],
             "cpk-hex": null,
             "names": [
-                "Moscovium"
+                "Moscovium",
+                "Moscovio"
             ]
         },
         {
@@ -5272,7 +5299,8 @@
             "ionization_energies": [],
             "cpk-hex": null,
             "names": [
-                "Livermorium"
+                "Livermorium",
+                "Livermorio"
             ]
         },
         {
@@ -5311,7 +5339,8 @@
             "ionization_energies": [],
             "cpk-hex": null,
             "names": [
-                "Tennessine"
+                "Tennessine",
+                "Tennesso"
             ]
         },
         {
@@ -5350,7 +5379,8 @@
             "ionization_energies": [],
             "cpk-hex": null,
             "names": [
-                "Oganesson"
+                "Oganesson",
+                "Oganesso"
             ]
         },
         {
@@ -5390,7 +5420,8 @@
             "ionization_energies": [],
             "cpk-hex": null,
             "names": [
-                "Ununennium"
+                "Ununennium",
+                "Ununennio"
             ]
         }
     ]
