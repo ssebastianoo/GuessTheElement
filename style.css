@@ -94,14 +94,25 @@ input {
 	align-items: center;
 }
 
-#hoverStatus {
+.hoverStatus {
 	margin-left: 40px;
 	margin-top: 40px;
 	font-size: 300%;
 }
 
-#hoverStatus span {
+.hoverStatusNotFound {
+	margin-top: 40px;
+	font-size: 200%;
+}
+
+.hoverStatus span {
 	padding: 2% 2%;
+	border-radius: 12px;
+	box-shadow: white 4px 4px;
+}
+
+.hoverStatusNotFound span {
+	padding: 1% 1%;
 	border-radius: 12px;
 	box-shadow: white 4px 4px;
 }
@@ -168,6 +179,42 @@ input {
 	border-radius: 12px;
 	cursor: pointer;
 	box-shadow: white 4px 4px;
+}
+
+.element-box {
+	margin-top: 25px;
+	margin-bottom: 20px;
+	border-style: solid;
+	width: 155px;
+	height: 155px;
+}
+
+#element-number {
+	font-size: 200%;
+	margin-left: 10px;
+	position: absolute;
+}
+
+#element-symbol {
+	font-size: 600%;
+}
+
+#element-name {
+	font-size: 160%;
+}
+
+.symbol-parent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: translateY(6px);
+}
+
+.name-parent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: translateY(-17px);
 }
 
 @media only screen and (max-width: 600px) {

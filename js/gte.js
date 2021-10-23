@@ -10,16 +10,6 @@ let points = {
 };
 let pointsItem = document.getElementById('points');
 let doneElements = [];
-let status = document.getElementById('hoverStatus');
-let fontDiv = document.getElementById('chooseFont');
-let fonts = {
-	'roboto': "'Roboto', sans-serif",
-	'urbanist': "'Urbanist', sans-serif",
-	'patrick hand': "'Patrick Hand', cursive",
-	"klee one": "'Klee One', cursive",
-	"besley": "'Besley', serif",
-	"ubuntu mono": "'Ubuntu Mono', monospace"
-}
 
 window.onload = async function () {
 	input.focus();
@@ -48,12 +38,8 @@ window.onload = async function () {
         if(event.target != fontDiv && event.target.parentNode != fontDiv){
             fontDiv.style.display = 'none';
         }
-  });
+  	});
 	await updatePoints();
-}
-
-async function timeout(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 async function getRandomElement() {
@@ -109,25 +95,6 @@ async function restart(skipPoints=false) {
 		await updatePoints();
 	};
 };
-
-async function updatePoints() { pointsItem.innerText = `${points['correct']} / ${points['total']}`; };
-
-async function showStatus(type) {
-	status.style.display = 'unset';
-	if (type === 'correct') { status.firstChild.innerText = 'Correct'; status.firstChild.style.background = 'RGBA(109, 232, 142, 0.5)' };
-	if (type === 'wrong') { status.firstChild.innerText = 'Wrong'; status.firstChild.style.background = 'RGBA(235, 94, 94, 0.5)' };
-	await timeout(1000);
-	status.style.display = 'none';
-};
-
-async function showFonts() {
-	fontDiv.style.display = 'unset';
-};
-
-async function changeFont(font) {
-	document.body.style.fontFamily = fonts[font];
-	input.style.fontFamily = fonts[font];
-}
 
 async function changeMode() {
 	switch(gameMode) {
