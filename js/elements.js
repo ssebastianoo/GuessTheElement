@@ -24,15 +24,20 @@ window.onload = async function () {
 };
 
 async function searchElement() {
-    let index = elements.filter(element => [element.name.toLowerCase(), element.symbol.toLowerCase(), element.number.toString()].includes(input.value.toLowerCase()));
+	let inputValue = input.value.toLowerCase().replace(/\s/g, '');
+    let index = elements.filter(element => [element.name.toLowerCase(), element.symbol.toLowerCase(), element.number.toString()].includes(inputValue));
     if (index.length === 0) {
-        elementNumber.innerText = 404;
-		elementSymbol.innerText = 'Nf';
-		elementName.innerText = 'Not found';
-		return;
+		index = elements.filter(element => element.names.includes(inputValue));
+		if (index.length === 0) {
+			elementNumber.innerText = 404;
+			elementSymbol.innerText = 'Nf';
+			elementName.innerText = 'Not found';
+			return;
+		};
     };
-	elementNumber.innerText = `${index[0].number}`;
-	elementSymbol.innerText = `${index[0].symbol}`;
-    elementName.innerText = `${index[0].name}`;
+	let element = index[0];
+	elementNumber.innerText = `${element.number}`;
+	elementSymbol.innerText = `${element.symbol}`;
+    elementName.innerText = `${element.name}`;
     input.value = '';
 }
