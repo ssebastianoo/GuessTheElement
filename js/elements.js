@@ -36,8 +36,8 @@ async function searchElement() {
 		};
     };
 	let element = index[0];
-	elementNumber.innerText = `${element.number}`;
-	elementSymbol.innerText = `${element.symbol}`;
-    elementName.innerText = `${element.name}`;
+	elementNumber.innerText = element.number;
+	elementSymbol.innerText = element.symbol;
+    elementName.innerText = element.name;
     input.value = '';
 }
