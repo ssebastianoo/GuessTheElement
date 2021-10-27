@@ -1,6 +1,7 @@
-let elementName = document.getElementById('element-name');
 let elementSymbol = document.getElementById('element-symbol');
 let elementNumber = document.getElementById('element-number');
+let elementName = document.getElementById('element-name');
+let info = document.getElementById('element-info')
 let input = document.getElementById('input');
 let elements;
 
@@ -36,8 +37,13 @@ async function searchElement() {
 		};
     };
 	let element = index[0];
-	elementNumber.innerText = element.number;
+	elementNumber.innerText = element.number; 
 	elementSymbol.innerText = element.symbol;
     elementName.innerText = element.name;
+
+	info.innerHTML = `<p class='element-info-name'>Names</p><p class='element-info-value'>${element.names.join(', ')}</p>
+					  <p class='element-info-name'>Symbol</p><p class='element-info-value'>${element.name.symbol}</p>
+					  <p class='element-info-name'>Atomic Number</p><p class='element-info-value'>${element.name.number}</p>
+					  <p class='element-info-name'>Atomic Mass</p><p class='element-info-value'>${element.name.atomic_mass}</p>`
     input.value = '';
 }

@@ -187,6 +187,7 @@ input {
 	border-style: solid;
 	width: 155px;
 	height: 155px;
+	float: left
 }
 
 #element-number {
@@ -215,6 +216,11 @@ input {
 	align-items: center;
 	justify-content: center;
 	transform: translateY(-17px);
+}
+
+.element-tab-info {
+	float: left;
+	margin-left: 50px;
 }
 
 @media only screen and (max-width: 600px) {
