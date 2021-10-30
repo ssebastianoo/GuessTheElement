@@ -6,26 +6,29 @@ let input = document.getElementById('input');
 let elements;
 
 async function getTable(data) {
-	let table = document.createElement('table');
-	let names = document.createElement('tr');
-	let values = document.createElement('tr');
+	let div = document.createElement('div');
 
-	console.log(data);
+	for (i = 0; i < data.length; i++) {
+		let table = document.createElement('table');
+		let names = document.createElement('tr');
+		let values = document.createElement('tr');
 
-	for (let info in data) {
-		let th = document.createElement('th');
-		let td = document.createElement('td');
-		th.innerText = info;
-		td.innerText = data[info];
-		names.appendChild(th);
-		values.appendChild(td);
+		for (let info in data[i]) {
+			let th = document.createElement('th');
+			let td = document.createElement('td');
+			th.innerText = info;
+			td.innerText = data[i][info];
+			names.appendChild(th);
+			values.appendChild(td);
+		};
+
+		table.appendChild(names);
+		table.appendChild(values);
+
+		div.appendChild(table);
 	};
-	
-	table.appendChild(names);
-	table.appendChild(values);
 
-	console.log(table.innerHTML)
-	return table.innerHTML;
+	return div.innerHTML;
 };
 
 window.onload = async function () {
@@ -64,11 +67,15 @@ async function searchElement() {
 	elementSymbol.innerText = element.symbol;
     elementName.innerText = element.name;
 
-	elementTable.innerHTML = await getTable({
-		Name: element.name,
-		Symbol: element.symbol,
-		'Atomic Number': element.number,
-		'Atomic Mass': element.atomic_mass
-	});
+	elementTable.innerHTML = await getTable([
+		{
+			Name: element.name,
+			Symbol: element.symbol
+		},
+		{
+			'Atomic Number': element.number,
+			'Atomic Mass': element.atomic_mass
+		}
+	]);
     input.value = '';
 }
