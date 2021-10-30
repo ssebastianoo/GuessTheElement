@@ -1,9 +1,32 @@
 let elementSymbol = document.getElementById('element-symbol');
 let elementNumber = document.getElementById('element-number');
 let elementName = document.getElementById('element-name');
-let info = document.getElementById('element-tab-info')
+let elementTable = document.getElementById('element-table')
 let input = document.getElementById('input');
 let elements;
+
+async function getTable(data) {
+	let table = document.createElement('table');
+	let names = document.createElement('tr');
+	let values = document.createElement('tr');
+
+	console.log(data);
+
+	for (let info in data) {
+		let th = document.createElement('th');
+		let td = document.createElement('td');
+		th.innerText = info;
+		td.innerText = data[info];
+		names.appendChild(th);
+		values.appendChild(td);
+	};
+	
+	table.appendChild(names);
+	table.appendChild(values);
+
+	console.log(table.innerHTML)
+	return table.innerHTML;
+};
 
 window.onload = async function () {
 	input.focus();
@@ -41,9 +64,11 @@ async function searchElement() {
 	elementSymbol.innerText = element.symbol;
     elementName.innerText = element.name;
 
-	info.innerHTML = `<p class='element-info-name'>Names</p><p class='element-info-value'>${element.names.join(', ')}</p>
-					  <p class='element-info-name'>Symbol</p><p class='element-info-value'>${element.symbol}</p>
-					  <p class='element-info-name'>Atomic Number</p><p class='element-info-value'>${element.number}</p>
-					  <p class='element-info-name'>Atomic Mass</p><p class='element-info-value'>${element.atomic_mass}</p>`
+	elementTable.innerHTML = await getTable({
+		Name: element.name,
+		Symbol: element.symbol,
+		'Atomic Number': element.number,
+		'Atomic Mass': element.atomic_mass
+	});
     input.value = '';
 }

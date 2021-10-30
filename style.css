@@ -185,9 +185,10 @@ input {
 	margin-top: 25px;
 	margin-bottom: 20px;
 	border-style: solid;
-	width: 155px;
+	min-width: 155px;;
 	height: 155px;
-	float: left
+	float: left;
+	margin-right: 50px;
 }
 
 #element-number {
@@ -218,9 +219,25 @@ input {
 	transform: translateY(-17px);
 }
 
-.element-tab-info {
+.element-section {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+table, .element-box {
 	float: left;
-	margin-left: 50px;
+}
+
+table {
+	height: 100px;
+	font-family: arial, sans-serif;
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
 }
 
 @media only screen and (max-width: 600px) {
