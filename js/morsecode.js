@@ -150,7 +150,7 @@ async function randomize() {
 }
 
 async function guess() {
-    if (input.value.toLowerCase() === (mode === 'gc' ? randomElement.value.toLowerCase() : randomElement.code)) {
+    if (input.value.toLowerCase().replace(/\s/g, '') === (mode === 'gc' ? randomElement.value.toLowerCase().replace(/\s/g, '') : randomElement.code.replace(/\s/g, ''))) {
         result.innerHTML = 'You guessed correctly!';
     } else {
         result.innerHTML = `You guessed wrong, ${mode === 'gc' ? `${randomElement.code} was ${randomElement.value}` : `${randomElement.value} was ${randomElement.code}`}`;
