@@ -4,7 +4,7 @@ const codes = [
         "value": "A"
     },
     {
-        "code": ". _ _ _",
+        "code": "_ . . .",
         "value": "B"
     },
     {
