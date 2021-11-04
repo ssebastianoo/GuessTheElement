@@ -155,6 +155,6 @@ async function guess() {
     } else {
         result.innerHTML = `You guessed wrong, ${mode === 'gc' ? `${randomElement.code} was ${randomElement.value}` : `${randomElement.value} was ${randomElement.code}`}`;
     };
-    input.innerHTML = '';
+    input.value = '';
     await randomize();
 }
