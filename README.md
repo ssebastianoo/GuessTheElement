@@ -1,0 +1,1 @@
+rewritten version of [guess the element](https://seba.gq/GuessTheElement) in svelte
