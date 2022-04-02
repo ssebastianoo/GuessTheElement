@@ -1,0 +1,19 @@
+{
+    "themes": [
+        {
+            "name": "default",
+            "color1": "#f6f5ae",
+            "color2": "#1f1f1f"
+        },
+        {
+            "name": "pastel",
+            "color1": "#f5f5f5",
+            "color2": "#c8c8c8"
+        },
+        {
+            "name": "asdasd",
+            "color1": "#acffa3",
+            "color2": "#4a5a91"
+        }
+    ]
+}

@@ -15,7 +15,7 @@
   function changeMode() {
     correctPoints.update((n) => 0);
     totalPoints.update((n) => 0);
-    status.update((n) => "");
+    status.set({guessed: null, message: ''});
     guessedElements.update((n) => []);
 
     if (modeValue === "guessSymbol") {

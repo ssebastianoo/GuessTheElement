@@ -51,12 +51,12 @@
     }
 
     if (guessed) {
-      status.update((n) => 'correct');
+      status.set({guessed: true, message: 'correct'});
       correctPoints.update((n) => n + 1);
       guessedElements.update((n) => [...n, element]);
       newElement();
     } else {
-      status.update((n) => `nope, it was ${correctAnswer}`);
+      status.set({guessed: false, message: `nope, it was ${correctAnswer}`});
       newElement();
     }
   }

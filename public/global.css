@@ -4,6 +4,8 @@
   --color1: #f6f5ae;
   --color2: #1f1f1f;
   --color3: #131313;
+  --correct: rgb(73, 173, 73);
+  --wrong: red;
   --font: "Ubuntu Mono", monospace;
 }
 
