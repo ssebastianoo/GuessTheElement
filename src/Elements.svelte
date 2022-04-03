@@ -23,7 +23,7 @@
         </div>
         <div class="attribute">
           <span class="name">mass</span>
-          <span class="value">{element.atomic_mass}</span>
+          <span class="value">{Math.round(element.atomic_mass)}</span>
         </div>
         <div class="attribute">
           <span class="name">category</span>

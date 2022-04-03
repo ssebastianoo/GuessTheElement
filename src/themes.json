@@ -14,6 +14,11 @@
             "name": "asdasd",
             "color1": "#acffa3",
             "color2": "#4a5a91"
+        },
+        {
+            "name": "matrix",
+            "color1": "#32de07",
+            "color2": "#000000"
         }
     ]
 }
