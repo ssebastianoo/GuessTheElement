@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
+:root {
+  --color1: #f6f5ae;
+  --color2: #1f1f1f;
+  --color3: #131313;
+  --correct: rgb(73, 173, 73);
+  --wrong: red;
+  --font: "Ubuntu Mono", monospace;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--color2);
+  color: var(--color1);
+}
+
+button {
+  background: none;
+  color: unset;
+  font-family: unset;
+  border: 1px solid var(--color1);
+  padding: 5px;
+  transition-duration: 0.2s;
+  border-radius: 3px;
+  outline: none;
+}
+
+button:hover {
+  background-color: var(--color1);
+  color: var(--color2);
+  cursor: pointer;
+}

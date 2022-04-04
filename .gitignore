@@ -1,4 +1,6 @@
-app/node_modules/
-app/package-lock.json
-app/dist/
-cli/node_modules/
+/node_modules/
+/public/build/
+package-lock.json
+gh-pages.js
+
+.DS_Store
