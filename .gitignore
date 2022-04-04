@@ -1,6 +1,0 @@
-/node_modules/
-/public/build/
-package-lock.json
-gh-pages.js
-
-.DS_Store
