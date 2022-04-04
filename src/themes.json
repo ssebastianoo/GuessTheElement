@@ -7,18 +7,23 @@
         },
         {
             "name": "pastel",
-            "color1": "#f5f5f5",
-            "color2": "#c8c8c8"
+            "color1": "#1a1818",
+            "color2": "#ff5757"
         },
         {
-            "name": "asdasd",
-            "color1": "#acffa3",
+            "name": "sky",
+            "color1": "#ffffff",
             "color2": "#4a5a91"
         },
         {
             "name": "matrix",
             "color1": "#32de07",
             "color2": "#000000"
+        },
+        {
+            "name": "lemon",
+            "color1": "#353634",
+            "color2": "#ebff12"
         }
     ]
 }

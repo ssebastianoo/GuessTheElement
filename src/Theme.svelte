@@ -1,31 +1,25 @@
 <script>
+    import { onMount } from "svelte";
     import * as themesRaw from "./themes.json";
     const themes = themesRaw.themes;
 
     let showMenu = false;
     const r = document.querySelector(":root");
 
+    onMount(() => {
+        if (localStorage.getItem("color1") && localStorage.getItem("color2")) {
+            r.style.setProperty("--color1", localStorage.getItem("color1"));
+            r.style.setProperty("--color2", localStorage.getItem("color2"));
+        }
+    });
+
     function showThemeSelection() {
         showMenu == true ? (showMenu = false) : (showMenu = true);
-        /* let color1 = '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');;
-        r.style.setProperty('--color1', color1);
-
-        let color2 = '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');;
-        let end = false;
-
-        while (!end) {
-            if (color2 !== color1) {
-                end = true;
-            } else {
-                color2 = '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');;
-            }
-        }
-
-        r.style.setProperty('--color2', color2); */
     }
 
     function changeTheme(e) {
-        console.log(e.target.style.color);
+        localStorage.setItem("color1", e.target.style.color);
+        localStorage.setItem("color2", e.target.style.backgroundColor);
         r.style.setProperty('--color1', e.target.style.color);
         r.style.setProperty('--color2', e.target.style.backgroundColor);
     }
@@ -64,6 +58,8 @@
 
     .theme-selection {
         position: fixed;
+        overflow-y: auto;
+        overflow-x: hidden;
         margin: 0;
         top: 0;
         left: 0;
