@@ -3,7 +3,6 @@
     let statusValue;
 
     status.subscribe((value) => {
-        console.log(value.guessed)
         statusValue = value;
     });
 </script>

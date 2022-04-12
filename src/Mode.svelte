@@ -5,6 +5,7 @@
     totalPoints,
     status,
     guessedElements,
+    reset,
   } from "./stores.js";
   let modeValue;
 
@@ -17,6 +18,7 @@
     totalPoints.update((n) => 0);
     status.set({guessed: null, message: ''});
     guessedElements.update((n) => []);
+    reset.update((n) => Date.now());
 
     if (modeValue === "guessSymbol") {
       mode.update((n) => "guessName");
