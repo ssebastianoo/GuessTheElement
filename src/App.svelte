@@ -35,7 +35,7 @@
                     url: seo.logo.url,
                     width: seo.logo.width,
                     height: seo.logo.height,
-                    alt: seo.logo.height,
+                    alt: seo.logo.alt,
                 },
             ],
         }}
