@@ -72,7 +72,7 @@
         if (guessed) {
             status.set({ guessed: true, message: "correct" });
             correctPoints.update((n) => n + 1);
-            guessedElements.update((n) => [...n, element]);
+            guessedElements.update((n) => [element, ...n]);
             newElement();
         } else {
             status.set({
