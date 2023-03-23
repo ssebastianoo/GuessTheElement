@@ -5,23 +5,24 @@
     import Mode from "./Mode.svelte";
     import Elements from "./Elements.svelte";
     import Theme from "./Theme.svelte";
-    import SvelteSeo from "svelte-seo";
 
-    const seo = {
-        title: "guess the element",
-        description: "guess the element by its symbol",
-        url: "https://gte.sebastianogirotto.me",
-        logo: {
-            url: "https://gte.sebastianogirotto.me/logo-800.png",
-            width: 800,
-            height: 800,
-            alt: "guess the element logo",
-        },
-    };
+    import { onMount } from "svelte";
+
+    onMount(() => {
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker
+                .register("/sw.js", {
+                    scope: "/",
+                })
+                .then((registration) => {
+                    registration.update();
+                });
+        }
+    });
 </script>
 
 <main>
-    <SvelteSeo
+    <!-- <SvelteSeo
         title={seo.title}
         description={seo.description}
         canonical={seo.url}
@@ -46,7 +47,7 @@
             image: seo.logo.url,
             imageAlt: seo.logo.alt,
         }}
-    />
+    /> -->
     <div class="container">
         <h1>guess the element</h1>
         <Alerts />

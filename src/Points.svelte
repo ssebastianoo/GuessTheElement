@@ -1,5 +1,5 @@
 <script>
-    import { correctPoints, totalPoints } from "./stores.js";
+    import { correctPoints, totalPoints } from "./store";
     let correctPointsValue, totalPointsValue;
 
     correctPoints.subscribe((value) => {
@@ -10,6 +10,7 @@
         totalPointsValue = value;
     });
 </script>
+
 <div class="points">
     <span>{correctPointsValue}/{totalPointsValue}</span>
 </div>

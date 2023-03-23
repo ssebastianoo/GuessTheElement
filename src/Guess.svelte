@@ -7,7 +7,7 @@
         mode,
         guessedElements,
         reset,
-    } from "./stores.js";
+    } from "./store";
     import { onMount } from "svelte";
     let elementsValue, originalElements, element, input, inputEl, modeValue;
     let alreadyChosen = Array(0);
